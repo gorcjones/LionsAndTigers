@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var breedLabel: UILabel!
     
     var myTigers:[Tiger] = []
+    var currentIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +61,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
-        let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        var randomIndex:Int
+        do {
+            randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        } while currentIndex == randomIndex
+        currentIndex = randomIndex
+        
+//        let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
         let tiger = myTigers[randomIndex]
 //        myImageView.image = tiger.image
 //        nameLabel.text = tiger.name
