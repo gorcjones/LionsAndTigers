@@ -28,7 +28,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="475" width="333" height="21"/>
+                                    <rect key="frame" x="16" y="444" width="333" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXm-BC-V81">
@@ -37,7 +37,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="504" width="333" height="21"/>
+                                    <rect key="frame" x="16" y="473" width="333" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wby-G6-uHy">
@@ -46,7 +46,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="533" width="333" height="21"/>
+                                    <rect key="frame" x="16" y="502" width="333" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Fact" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4A-Or-cWc">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="531" width="333" height="46"/>
                                 </variation>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsP-ZO-2rY">
@@ -71,6 +80,7 @@
                                 <exclude reference="OA9-gy-mZb"/>
                                 <exclude reference="DXm-BC-V81"/>
                                 <exclude reference="wby-G6-uHy"/>
+                                <exclude reference="A4A-Or-cWc"/>
                                 <exclude reference="JsP-ZO-2rY"/>
                             </mask>
                         </variation>
@@ -80,6 +90,7 @@
                                 <include reference="OA9-gy-mZb"/>
                                 <include reference="DXm-BC-V81"/>
                                 <include reference="wby-G6-uHy"/>
+                                <include reference="A4A-Or-cWc"/>
                                 <include reference="JsP-ZO-2rY"/>
                             </mask>
                         </variation>
@@ -89,6 +100,7 @@
                         <outlet property="breedLabel" destination="wby-G6-uHy" id="jX2-DH-Q9M"/>
                         <outlet property="myImageView" destination="wS8-2v-9ah" id="bQj-Jy-VsP"/>
                         <outlet property="nameLabel" destination="OA9-gy-mZb" id="5yA-1I-wO3"/>
+                        <outlet property="randomFactLabel" destination="A4A-Or-cWc" id="cZ9-gj-xui"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
