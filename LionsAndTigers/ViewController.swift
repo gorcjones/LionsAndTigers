@@ -82,6 +82,11 @@ class ViewController: UIViewController {
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
         
+        lion.roar()
+        lioness.roar()
+        lion.changeToAlphaMale()
+        println(lion.isAlphaMale)
+        
         self.lions += [lion,lioness]
     }
 
@@ -124,6 +129,7 @@ class ViewController: UIViewController {
                 self.breedLabel.text = lion.subspecies
                 self.ageLabel.text = "\(lion.age)"
                 self.nameLabel.text = lion.name
+                self.randomFactLabel.text = lion.randomFact()
                 
             }
             
